@@ -19,3 +19,4 @@ Launch InfluxDB, Grafana and nginx with fig.
 * maybe add stream processing infront of influxdb such as rieman?
 * maybe use seperate influxdb container for grafana dashboard store
 * maybe pre-configure grafana dashboard with something more useful
+* maybe support influxdb replication
