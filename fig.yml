@@ -1,0 +1,20 @@
+influxdb:
+  image: tutum/influxdb
+  ports:
+    - "8083"
+    - "8086:8086"
+  environment:
+    PRE_CREATE_DB: db
+grafana:
+  image: tutum/grafana
+  links:
+    - influxdb
+  environment:
+    HTTP_PASS: password1
+    INFLUXDB_PORT: 8086
+    INFLUXDB_HOST: influxdb
+    INFLUXDB_NAME: db
+    INFLUXDB_USER: root
+    INFLUXDB_PASS: root 
+  ports:
+    - "80" 
