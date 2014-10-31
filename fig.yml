@@ -5,13 +5,14 @@ influxdb:
     - "8086:8086"
   environment:
     PRE_CREATE_DB: metrics;grafana
-grafanafiles:
-  build: grafanafiles
 grafana:
-  build: grafana 
+  build: grafana
+nginx:
+  build: nginx
   links:
     - influxdb
   volumes_from:
-    - grafanafiles
+    - grafana
   ports:
-    - "80" 
+    - "80"
+    - "8086"

@@ -1,4 +1,11 @@
-FROM nginx
+FROM debian:jessie
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+ADD http://grafanarel.s3.amazonaws.com/grafana-1.8.1.tar.gz /grafana.tar.gz
+RUN tar xzf /grafana.tar.gz && \
+    rm /grafana.tar.gz && \
+    mv /grafana-1.8.1 /grafana
+ADD config.js /grafana/
 
+VOLUME /grafana
+
+CMD ["/bin/sh"]
