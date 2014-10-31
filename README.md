@@ -11,6 +11,7 @@ Launch InfluxDB, Grafana and nginx with fig.
 * fix grafanafiles volume-container. is this the right way? base it off busybox?
 * authentication influxdb (root/root for now) and grafana-nginx (none for now)
 * pre-populate influxdb with some data for demo purposes
+* enable graphite input plugin in influxdb
 * show end2end use case: add metrics with curl, show graph
 * present result: video, demo, ...
 
