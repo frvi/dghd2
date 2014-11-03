@@ -7,7 +7,7 @@ Launch InfluxDB, Grafana and nginx with fig.
 
 ## Demo
 
-http://104.131.170.131/
+http://104.131.170.131/   (Thank you, DigitalOcean!)
 
 ## TODO
 * authentication influxdb (root/root for now) and grafana-nginx (none for now)
