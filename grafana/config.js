@@ -8,15 +8,13 @@ function (Settings) {
     datasources: {
       influxdb: {
         type: 'influxdb',
-       // url: "http://influxdb:8086/db/metrics",
-        url: "http://104.131.170.131:8086/db/metrics",
+        url: "/db/metrics",
         username: 'root',
         password: 'root',
       },
       grafana: {
         type: 'influxdb',
-        //url: "http://influxdb:8086/db/grafana",
-        url: "http://104.131.170.131:8086/db/metrics",
+        url: "/db/metrics",
         username: 'root',
         password: 'root',
         grafanaDB: true
