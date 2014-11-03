@@ -5,6 +5,10 @@ Docker Global Hack Day #2
 
 Launch InfluxDB, Grafana and nginx with fig.
 
+## Demo
+
+http://104.131.170.131/#dashboard/db/grafana
+
 ## TODO
 * authentication influxdb (root/root for now) and grafana-nginx (none for now)
 * pre-populate influxdb with some data for demo purposes
