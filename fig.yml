@@ -1,5 +1,5 @@
 influxdb:
-  build: influxdb
+  image: tutum/influxdb
   environment:
     PRE_CREATE_DB: metrics;grafana
   ports:
