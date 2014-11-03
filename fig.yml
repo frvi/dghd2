@@ -1,9 +1,10 @@
 influxdb:
-  image: tutum/influxdb
+  build: influxdb
   environment:
     PRE_CREATE_DB: metrics;grafana
   ports:
     - "8086"
+    - "8083"
 grafana:
   build: grafana
 nginx:
@@ -14,3 +15,4 @@ nginx:
     - grafana
   ports:
     - "80"
+    - "8080"
